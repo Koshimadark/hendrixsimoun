@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSCS Course Brochure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Splash Screen */
+    #splash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #1e3c72;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      text-align: center;
+    }
+    #splash h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #openBtn {
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      background: #fff;
+      color: #1e3c72;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #openBtn:hover {
+      background: #f5f5f5;
+    }
+
+    /* Hide main content initially */
+    #mainContent {
+      display: none;
+    }
+
+    header {
+      background: #1e3c72;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+       z-index: 1;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+    background: #2c3e50;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    nav a {
+      color: #fff;
+      margin: 5px 15px;
+      text-decoration: none;
+      list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+     background: transparent;
+    border: 2px solid #c9c9c9;
+    border-radius: 20px;
+    }
+    nav a::after{
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: auto;
+    background: #f44336;
+   
+}
+    nav a:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    }
+    nav a:hover::after{
+        width: 100%;
+    }
+    section {
+      padding: 60px 0;
+      margin-bottom: 30px;
+      border-radius: 10px;
+
+    }
+    section h2 {
+      margin-bottom: 15px;
+      color: #1e3c72;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1e3c72;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <h1>Welcome to BSCS Family</h1>
+    <button id="openBtn">Join Us</button>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent">
+    <header>
+      <h1>Bachelor of Science in Computer Science (BSCS)</h1>
+      <p>Explore the world of computing, innovation, and technology.</p>
+    </header>
+
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#why">Why Choose BSCS</a>
+      <a href="#programs">Offered Programs</a>
+      <a href="#fun">Why It's Fun</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="overview">
+      <h2>Course Overview</h2>
+      <p>The Bachelor of Science in Computer Science (BSCS) is a four-year program that equips students with strong foundations in computing, programming, data structures, software engineering, and emerging technologies. This program is designed to prepare graduates for careers in software development, IT industry, research, and academia.</p>
+    </section>
+
+    <section id="why">
+      <h2>Why Choose BSCS?</h2>
+      <p>Choosing BSCS means entering a dynamic and ever-growing field where technology drives innovation. This program provides not just theoretical knowledge but also practical experience in solving real-world problems. It opens opportunities in industries like software development, artificial intelligence, data science, and cybersecurity.</p>
+    </section>
+
+    <section id="programs">
+      <h2>Offered Programs</h2>
+      <ul>
+        <li>BSCS Major in Artificial Intelligence</li>
+        <li>BSCS Major in Data Science</li>
+        <li>BSCS Major in Software Engineering</li>
+        <li>BSCS Major in Cybersecurity</li>
+        <li>BSCS General Track</li>
+      </ul>
+    </section>
+
+    <section id="fun">
+      <h2>Why It's Fun to Enroll</h2>
+      <p>Enrolling in BSCS is not just about coding—it’s about collaboration, creativity, and innovation. Students enjoy hands-on projects, coding competitions, hackathons, research presentations, and group activities that make learning exciting and rewarding. The program builds strong friendships, teamwork, and real-world skills while having fun along the way.</p>
+    </section>
+
+    <section id="curriculum">
+      <h2>Curriculum Highlights</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Programming</h3>
+          <p>Learn programming languages such as Python, Java, and C++ to build real-world applications.</p>
+        </div>
+        <div class="card">
+          <h3>Data Structures & Algorithms</h3>
+          <p>Develop problem-solving skills with efficient algorithms and data organization techniques.</p>
+        </div>
+        <div class="card">
+          <h3>Software Engineering</h3>
+          <p>Understand system design, development methodologies, and project management.</p>
+        </div>
+        <div class="card">
+          <h3>Artificial Intelligence</h3>
+          <p>Explore machine learning, robotics, and intelligent systems shaping the future of technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="careers">
+      <h2>Career Opportunities</h2>
+      <ul>
+        <li>Software Developer / Engineer</li>
+        <li>Data Scientist / Analyst</li>
+        <li>Cybersecurity Specialist</li>
+        <li>Systems Administrator</li>
+        <li>Game Developer</li>
+        <li>Researcher / Academic</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For inquiries and enrollment, please contact the College of Computer Studies:</p>
+      <p>Email: drixie@gmail.com | Phone: 09977494031 </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 BSCS Program | All Rights Reserved</p>
+      <p>Created by: Hendrix Simoun C. Espinosa</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("openBtn").addEventListener("click", function() {
+      document.getElementById("splash").style.display = "none";
+      document.getElementById("mainContent").style.display = "block";
+    });
+  </script>
+</body>
+</html>
